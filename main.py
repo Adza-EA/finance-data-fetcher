@@ -40,5 +40,11 @@ for key in ['longName', 'sector', 'industry', 'marketCap']:
     print(f"{key}: {company_info.get(key, 'N/A')}")
 
 print(f"\nTop 3 news headlines for {TICKER}:")
-for article in news[:3]:
-    print(f"- {article['title']}")
+
+for i, article in enumerate(news[:3]):
+    if isinstance(article, dict):
+        title = article.get('title') or article.get('headline') or '[No title available]'
+        publisher = article.get('publisher', 'Unknown source')
+        print(f"{i+1}. {title} ({publisher})")
+    else:
+        print(f"{i+1}. [Invalid news item]")
