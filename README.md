@@ -11,6 +11,7 @@ finance-data-fetcher/
 - ├── requirements.txt
 - ├── README.md 
 - ├── .gitignore
+- ├── LICENCE
 - ├── utils/ 
 - │ ├── init.py
 - │ ├── fetch_stock.py
