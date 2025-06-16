@@ -56,45 +56,45 @@ The Excel file (e.g., AAPL_finance_data.xlsx) will be saved in the root director
 
 
 
-**📌 Customization Guide**
+## 📌 Customization Guide
 You can edit the variables at the top of main.py:
 
-# python
-TICKER = "AAPL"                  # Change to your desired stock symbol
-START_DATE = "2023-01-01"        # Historical data start
-END_DATE = "2025-06-16"          # Historical data end
-INTERVAL = "1d"                  # '1d', '1wk', or '1mo'
-EXPIRY_DATE = None               # Optional: e.g., '2024-07-19'
+    ```python
+    TICKER = "AAPL"                  # Change to your desired stock symbol
+    START_DATE = "2023-01-01"        # Historical data start
+    END_DATE = "2025-06-16"          # Historical data end
+    INTERVAL = "1d"                  # '1d', '1wk', or '1mo'
+    EXPIRY_DATE = None               # Optional: e.g., '2024-07-19'
 
 
 ***📦 Requirements***
 Python 3.7+
 
-# Packages:
+Packages:
 yfinance
 pandas
 openpyxl
 
 All dependencies can be installed using:
 
-# bash
-pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
 
 
-🧠 How It Works
+## 🧠 How It Works
 Each function is modular and stored inside the utils/ folder:
 
 File	Description
-fetch_stock.py	      Fetch historical stock data
-fetch_info.py       	Get company metadata
-fetch_financials.py	  Retrieve financial statements
-fetch_news.py	Load    latest news about the company
-fetch_options.py    	Get options chain data
-export_data.py      	Export data to Excel
+fetch_stock.py	         Fetch historical stock data
+fetch_info.py        	Get company metadata
+fetch_financials.py	   Retrieve financial statements
+fetch_news.py	Load     latest news about the company
+fetch_options.py     	Get options chain data
+export_data.py       	Export data to Excel
 
 You can import and use them independently or run everything via main.py.
 
-📤 Example Output
+## 📤 Example Output
 The exported Excel file includes multiple sheets like:
 
 Stock_Data
@@ -106,7 +106,7 @@ Options_Puts
 
 Check the sample_output/ folder to see example files.
 
-🤝 Contributing
+## 🤝 Contributing
 Have an idea to improve this tool (e.g., add charts, web app, or database export)?
 Feel free to fork this repo and submit a pull request!
 
