@@ -39,12 +39,15 @@ print(f"\n--- {TICKER} Company Info ---")
 for key in ['longName', 'sector', 'industry', 'marketCap']:
     print(f"{key}: {company_info.get(key, 'N/A')}")
 
+# Optional: Print Raw news
+# print("Raw news data:")
+# for i, item in enumerate(news[:3]):
+#     print(f"{i+1}: {item}")
+
 print(f"\nTop 3 news headlines for {TICKER}:")
 
 for i, article in enumerate(news[:3]):
-    if isinstance(article, dict):
-        title = article.get('title') or article.get('headline') or '[No title available]'
-        publisher = article.get('publisher', 'Unknown source')
-        print(f"{i+1}. {title} ({publisher})")
-    else:
-        print(f"{i+1}. [Invalid news item]")
+    content = article.get('content', {})
+    title = content.get('title', '[No title available]')
+    publisher = content.get('provider', {}).get('displayName', 'Unknown source')
+    print(f"{i+1}. {title} ({publisher})")
