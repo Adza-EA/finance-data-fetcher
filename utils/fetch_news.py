@@ -15,3 +15,4 @@ def get_latest_news(ticker):
     stock = yf.Ticker(ticker)
     news = stock.news or []
     return [n for n in news if isinstance(n, dict)]  # returns a list of news dictionaries
+
