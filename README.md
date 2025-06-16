@@ -7,11 +7,11 @@ A modular Python project for fetching and exporting comprehensive financial data
 ## 📂 Project Structure
 
 finance-data-fetcher/
-- ├── main.py # Entry script to run and customize data fetching
-- ├── requirements.txt # List of dependencies
-- ├── README.md # Project documentation (this file)
-- ├── .gitignore # Files and folders to ignore in Git
-- ├── utils/ # Reusable data-fetching modules
+- ├── main.py 
+- ├── requirements.txt
+- ├── README.md 
+- ├── .gitignore
+- ├── utils/ 
 - │ ├── init.py
 - │ ├── fetch_stock.py
 - │ ├── fetch_info.py
@@ -19,7 +19,7 @@ finance-data-fetcher/
 - │ ├── fetch_news.py
 - │ ├── fetch_options.py
 - │ └── export_data.py
-- └── sample_output/ # Output folder for saved Excel files
+- └── sample_output/
 - └── AAPL_finance_data.xlsx
 
 
