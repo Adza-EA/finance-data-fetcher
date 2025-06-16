@@ -20,4 +20,3 @@ def export_to_excel(data_dict, filename='output.xlsx'):
                 if pd.api.types.is_datetime64tz_dtype(df.index):
                     df.index = df.index.tz_localize(None)
                 df.to_excel(writer, sheet_name=sheet_name[:31])  # Excel sheet names max = 31 chars
-
