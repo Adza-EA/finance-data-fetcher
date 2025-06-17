@@ -1,4 +1,4 @@
-# 📊 Finance Data Fetcher
+# 📊 yfinance User Guide
 
 A modular Python project for fetching and exporting comprehensive financial data using the [`yfinance`](https://pypi.org/project/yfinance/) library. Designed for beginners and finance/data enthusiasts, this tool makes it easy to collect stock prices, company details, financial statements, news, and options data—all in a few lines of code.
 
